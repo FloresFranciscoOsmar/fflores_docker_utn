@@ -1,0 +1,32 @@
+services:
+
+  nginxsrv1:
+    image: fflores-nginx-alpine
+    ports: 
+      - "8081:80"
+    volumes:
+      - ./nginxsrv1.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - nginxsrv
+  
+  nginxsrv2:
+    image: fflores-nginx-alpine
+    ports: 
+      - "8082:80"
+    volumes:
+      - ./nginxsrv2.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - nginxsrv
+  
+  nginxsrv_load_balancer:
+    image: fflores-nginx-alpine
+    ports: 
+      - "8080:80"
+    volumes:
+      - ./load_balancer.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - nginxsrv
+
+networks:
+  nginxsrv:
+    driver: bridge
