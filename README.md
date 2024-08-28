@@ -28,16 +28,16 @@ Elegí esta tecnología porque me estoy familiarizando con nginx ya que por mi p
 
 #### Puertos utilizados y archivos de configuración
 nginxsrv1:
-	puerto expuesto: 80
-	puerto máquina local utilizado: 8081
-	archivo de configuración: nginxsrv1.conf
-nginxsrv2:
-	puerto expuesto: 80
-	puerto máquina local utilizado: 8082
-	archivo de configuración: nginxsrv2.conf
-load_balancer:
-	puerto expuesto: 80
-	puerto máquina local utilizado: 8080
-	archivo de configuración: load_balancer.conf
-
+	puerto expuesto: 80 
+	puerto máquina local utilizado: 8081  
+	archivo de configuración: nginxsrv1.conf  
+nginxsrv2:  
+	puerto expuesto: 80  
+	puerto máquina local utilizado: 8082  
+	archivo de configuración: nginxsrv2.conf  
+load_balancer:  
+	puerto expuesto: 80  
+	puerto máquina local utilizado: 8080  
+	archivo de configuración: load_balancer.conf  
+  
 El funcionamiento de los archivos de configuración están comentados explicando su funcionamiento
