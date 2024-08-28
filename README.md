@@ -23,6 +23,10 @@ Elegí esta tecnología porque me estoy familiarizando con nginx ya que por mi p
 2. Ejecutamos el docker compose, en el mismo directorio que el paso anterior ejecuamos lo siguiente  
    <pre>docker compose up -d</pre>  
    El flag -d es para que se ejecute en segundo plano en lugar de consumir la terminal.  
+3. Podemos desde una terminal ejecutar un curl hacia
+   localhost:8080 o acceder desde un navegador, al ejecutarlo de forma consecutiva vamos a ver como nos da el mensaje
+   "Servidor 1!" o "Servidor 2!" dependiendo de quien resuelva la petición que se le hizo
+   Se recomienda utilizar terminal con curl o utilizar 
 
 ## Puertos y consideraciones
 
@@ -42,4 +46,6 @@ load_balancer:
 	archivo de configuración: load_balancer.conf  
 </pre> 
 
-El funcionamiento de los archivos de configuración están comentados explicando su funcionamiento
+#### Ejemplo de uso
+![Captura de ejemplo](./img/ss.png)
+El funcionamiento de los archivos de configuración están comentados según su uso en cada uno de los mismos. 
