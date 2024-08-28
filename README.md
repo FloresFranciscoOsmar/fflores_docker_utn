@@ -27,7 +27,7 @@ Elegí esta tecnología porque me estoy familiarizando con nginx ya que por mi p
 ## Puertos y consideraciones
 
 #### Puertos utilizados y archivos de configuración
-nginxsrv1:
+nginxsrv1:  <br/>
   puerto expuesto: 80 
 	puerto máquina local utilizado: 8081  
 	archivo de configuración: nginxsrv1.conf  
