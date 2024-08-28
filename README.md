@@ -5,7 +5,7 @@
 
 Este proyecto configura y despliega un entorno con dos instancias de Nginx y un load balancer con Docker y Docker Compose, utilizando algunos conocimientos adquiridos en el curso.
 Elegí esta tecnología porque me estoy familiarizando con nginx ya que por mi puesto (sysadmin), me gustaría aprender esta tecnología y la versatilidad de usos de la misma.
-
+El método de load balancing que utilicé es el de round robin, que siempre vamos a elegir el contenedor de nginxsrv1 siempre y cuando esté libre
 
 ### Requisitos
 
