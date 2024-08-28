@@ -18,10 +18,10 @@ Elegí esta tecnología porque me estoy familiarizando con nginx ya que por mi p
 
   La forma de inicializar el proyecto es ejecutando esta serie de instrucciones  
 1. Construimos la imagen de Docker ubicando nuestra terminal en donde está este repositorio.  
-   docker buildx build -t fflores-nginx-alpine .  
+   <pre>docker buildx build -t fflores-nginx-alpine . </pre> 
    Bindeando/asignando así el nombre "fflores-nginx-alpine" a nuestra imagen que construimos con el flag -t  
 2. Ejecutamos el docker compose, en el mismo directorio que el paso anterior ejecuamos lo siguiente  
-   docker compose up -d  
+   <pre>docker compose up -d</pre>  
    El flag -d es para que se ejecute en segundo plano en lugar de consumir la terminal.  
 
 ## Puertos y consideraciones
