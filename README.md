@@ -47,5 +47,5 @@ load_balancer:
 </pre> 
 
 #### Ejemplo de uso
-![Captura de ejemplo](./img/ss.png)
+<p style="text-align:center">![Captura de ejemplo](./img/ss.png)</p>  
 El funcionamiento de los archivos de configuración están comentados según su uso en cada uno de los mismos. 
