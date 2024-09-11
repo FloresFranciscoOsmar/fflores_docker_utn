@@ -1,7 +1,7 @@
 services:
 
   nginxsrv1:
-    image: fflores-nginx-alpine
+    build: .
     ports: 
       - "8081:80"
     volumes:
@@ -10,7 +10,7 @@ services:
       - nginxsrv
   
   nginxsrv2:
-    image: fflores-nginx-alpine
+    build: .
     ports: 
       - "8082:80"
     volumes:
@@ -19,7 +19,7 @@ services:
       - nginxsrv
   
   nginxsrv_load_balancer:
-    image: fflores-nginx-alpine
+    build: .
     ports: 
       - "8080:80"
     volumes:
